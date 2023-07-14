@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web challange responsive project-1</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .left-img {
+      width: 50%;
+
+    }
+
+    .left-img img {
+      width: 80%;
+    }
+
+    .right-side-text {
+      width: 50%;
+    }
+
+    .right-side-text h1 {
+      font-size: 50px;
+    }
+
+    .right-side-text p {
+      font-size: 20px;
+    }
+
+    .right-side-text button {
+      background-color: black;
+      color: whitesmoke;
+      padding: 10px 10px;
+      outline: none;
+      border: 0;
+    }
+
+
+    /* Respponsive css for this projects */
+    @media screen and (max-width: 576px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-img {
+        width: 80%;
+      }
+
+      .right-side-text {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-img">
+      <img src="/Scarecrow.png" alt="">
+    </div>
+    <div class="right-side-text">
+      <h1>I Have bad side for you</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea libero sapiente nemo. Pariatur deserunt doloribus
+        eligendi saepe necessitatibus dignissimos quo, blanditiis quam ab soluta non corrupti repudiandae ullam neque
+        fuga.</p>
+      <button>Back to home page </button>
+    </div>
+  </div>
+</body>
+
+</html>
